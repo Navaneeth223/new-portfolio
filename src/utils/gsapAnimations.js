@@ -5,6 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Stagger text animation (letter by letter)
 export const animateTextStagger = (element, delay = 0) => {
+    if (!element) return;
     const text = element.textContent;
     element.innerHTML = text
         .split('')
@@ -12,22 +13,17 @@ export const animateTextStagger = (element, delay = 0) => {
         .join('');
 
     const chars = element.querySelectorAll('span');
+    if (chars.length === 0) return;
 
-    gsap.fromTo(
+    gsap.from(
         chars,
         {
             opacity: 0,
-            y: 50,
-            rotationX: -90,
-        },
-        {
-            opacity: 1,
-            y: 0,
-            rotationX: 0,
-            duration: 0.8,
+            y: 20,
+            duration: 0.6,
             stagger: 0.02,
             delay,
-            ease: 'back.out(1.7)',
+            ease: 'power2.out',
         }
     );
 };

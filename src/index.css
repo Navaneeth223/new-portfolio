@@ -54,10 +54,18 @@ body {
 }
 
 .text-gradient {
+  color: #00d9ff;
+  /* Solid fallback */
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
   background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+}
+
+.text-gradient span {
+  background-clip: inherit;
+  -webkit-background-clip: inherit;
+  color: transparent;
+  background-image: inherit;
 }
 
 .neon-glow {

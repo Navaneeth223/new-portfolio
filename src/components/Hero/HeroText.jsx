@@ -32,21 +32,19 @@ const HeroText = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen text-center px-4 relative z-10">
+        <div className="flex flex-col items-center justify-center min-h-screen text-center px-4 relative z-20">
             <div className="space-y-6 max-w-5xl">
                 <h1
                     ref={nameRef}
-                    className="text-6xl md:text-8xl lg:text-9xl font-display font-bold text-gradient mb-4"
-                    style={{ opacity: animationReady ? 1 : 1 }}
+                    className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-gradient mb-4"
                 >
-                    NAVANEETH KV
+                    NAVANEETH K V
                 </h1>
 
                 <div className="space-y-3">
                     <h2
                         ref={roleRef}
                         className="text-2xl md:text-4xl lg:text-5xl font-display font-medium text-white/90"
-                        style={{ opacity: animationReady ? 1 : 1 }}
                     >
                         Full Stack MERN Developer
                     </h2>

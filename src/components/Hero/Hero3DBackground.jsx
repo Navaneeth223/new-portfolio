@@ -126,7 +126,7 @@ const MouseInteraction = () => {
 
 const Hero3DBackground = () => {
     return (
-        <div className="fixed top-0 left-0 w-full h-screen -z-10">
+        <div className="fixed top-0 left-0 w-full h-screen -z-10 pointer-events-none">
             <Canvas
                 camera={{ position: [0, 0, 5], fov: 75 }}
                 gl={{ antialias: true, alpha: true }}
