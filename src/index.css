@@ -7,6 +7,8 @@
   --color-primary: #00d9ff;
   --color-primary-dark: #00a8cc;
   --color-primary-light: #66e5ff;
+  --color-secondary: #ff00e5;
+  --color-accent: #7000ff;
 
   --color-dark-bg: #0a0a0a;
   --color-dark-surface: #121212;
@@ -45,20 +47,41 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   padding: 1.5rem;
-  transition: all 0.3s;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .glass-card:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.glass-card-premium {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.glass-card-premium:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 32px 0 rgba(0, 217, 255, 0.2);
 }
 
 .text-gradient {
-  color: #00d9ff;
-  /* Solid fallback */
   background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+}
+
+.text-gradient-secondary {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--color-secondary), var(--color-accent));
 }
 
 .text-gradient span {
