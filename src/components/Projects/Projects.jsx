@@ -21,45 +21,45 @@ const Projects = () => {
 
     const projects = [
         {
-            title: 'OpenMind',
-            description: 'Full-stack e-commerce platform with responsive layout, advanced product filtering, shopping cart flow, seller dashboard, and smooth UI animations. Complete MERN stack implementation.',
-            tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST API'],
+            title: 'OpenMind AI',
+            description: 'A free, open-source AI chatbot powered by local LLMs via Ollama. Features streaming chat, real-time web search, file uploads, and conversation history with multi-model support.',
+            tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Ollama', 'Prisma', 'Zustand'],
             features: [
-                'Responsive Product Catalog',
-                'Advanced Search & Filtering',
-                'Secure Checkout Flow',
-                'Seller Dashboard for Product Management',
-                'User Profile & Order History'
+                'Local LLM Inference',
+                'Real-time Web Search',
+                'File Analysis & Extraction',
+                'Persistent Conversation History',
+                'Multi-model Switching'
             ],
-            link: 'https://my-on-ai.vercel.app/', // Add your project link
+            link: 'https://my-on-ai.vercel.app/',
             github: 'https://github.com/Navaneeth223/my-on-ai',
-            image: OpenMind, // Replace with imported image
+            image: OpenMind,
         },
         {
-            title: 'Clinic',
-            description: 'Advanced browser-based PDF manipulation tool featuring text insertion, image placement, freehand drawing, erasing capabilities, watermarking, and multi-page editing with accurate canvas positioning.',
-            tech: ['React.js', 'Canvas API', 'JavaScript', 'PDF.js'],
+            title: 'Serene Homeo Clinic',
+            description: 'Production-ready Healthcare application for a Homeopathy clinic. Features patient appointment booking, specialized clinical workflows, and a tablet-optimized UI for practitioners.',
+            tech: ['MERN Stack', 'MongoDB', 'Express', 'React', 'Node.js', 'Tailwind CSS'],
             features: [
-                'Interactive Canvas Editing',
-                'Text & Image Insertion',
-                'Freehand Drawing & Eraser',
-                'Watermarking Capabilities',
-                'Multi-page PDF Support'
+                'Patient Appointment Booking',
+                'Tablet-Friendly Dashboard',
+                'Medical Record Management',
+                'Real-time Appointment Status',
+                'Clinic Management System'
             ],
             link: 'https://serene-homeo-clinic.vercel.app/',
             github: 'https://github.com/Navaneeth223/Serene-Homeo-Clinic',
             image: Clinic,
         },
         {
-            title: 'Premium Chocolates',
-            description: 'Web application that generates stunning mobile wallpapers from text prompts. Features AI image generation, custom text overlays, fonts, emojis, stickers, and multiple resolution support with download functionality.',
-            tech: ['React.js', 'Node.js', 'Express.js', 'AI API', 'Canvas'],
+            title: "Vedu's Premium Chocolate",
+            description: 'An ultra-luxury e-commerce experience for an artisanal chocolate brand. Features a celestial-inspired UI with high-end animations and interactive product storytelling.',
+            tech: ['React 19', 'Vite', 'Tailwind CSS', 'Framer Motion'],
             features: [
-                'DALL-E / Stable Diffusion Integration',
-                'Text Customization (Fonts, Colors)',
-                'Sticker & Emoji Overlay',
-                'Multiple Aspect Ratio Support',
-                'One-click Download'
+                'Celestial-themed UI Design',
+                'Smooth Parallax Scrolling',
+                'Interactive Product Showcase',
+                'Modern Shopping Flow',
+                'Luxury Aesthetic'
             ],
             link: 'https://premium-chocolate.vercel.app/',
             github: 'https://github.com/Navaneeth223/premium-chocolate',
@@ -67,44 +67,44 @@ const Projects = () => {
         },
         {
             title: 'Premium Bakery',
-            description: 'Interactive business website showcasing 3D visual elements and smooth animations. Implemented with Three.js-based 3D elements and Firebase backend for content management.',
-            tech: ['Three.js', 'React.js', 'Firebase', 'GSAP'],
+            description: 'Cinematic luxury bakery website featuring a minimal aesthetic, rich animations, and an immersive scroll experience designed for high-end local businesses.',
+            tech: ['React', 'Tailwind CSS v4', 'Framer Motion', 'GSAP'],
             features: [
-                '3D Scene Integration',
-                'GSAP Scroll Animations',
-                'Firebase CMS for Content',
-                'Interactive Product Showcase',
-                'Mobile-optimized 3D Rendering'
+                'Cinematic Ken Burns Hero',
+                'Artisanal Product Gallery',
+                'Dual Light/Dark Themes',
+                'WhatsApp & Call Integration',
+                'Luxury Business UI'
             ],
             link: 'https://premium-bakery.vercel.app/',
             github: 'https://github.com/Navaneeth223/PremiumBakery',
             image: Bikery,
         },
         {
-            title: 'TMS',
-            description: 'Custom QR code generator with support for both SVG and PNG formats. Features include adjustable size control, error correction levels, and clean UI with dark/light mode support.',
-            tech: ['React.js', 'QR Library', 'JavaScript', 'CSS3'],
+            title: 'Talent Management System',
+            description: 'Professional Job Portal & Candidate Panel module featuring a multi-step onboarding wizard, dashboard tracking, and advanced job filtering with a mobile-first Figma-to-code UI.',
+            tech: ['React (Vite)', 'Tailwind CSS v3.3', 'React Router', 'Lucide Icons'],
             features: [
-                'SVG & PNG Export',
-                'Adjustable Size & Precision',
-                'Error Correction Level Control',
-                'Dynamic Color Customization',
-                'Clean, Responsive UI'
+                'Multi-step Onboarding Wizard',
+                'Real-time Profile Tracking',
+                'Advanced Job Filtering',
+                'Responsive Admin Dashboard',
+                'Mobile-first UX'
             ],
             link: 'http://159.65.157.39/',
-            github: 'https://github.com/Navaneeth223/tms-project',
+            github: 'https://github.com/Navaneeth223/JobPortal1',
             image: TMS,
         },
         {
-            title: 'Lodage',
-            description: 'Flutter-based mobile application centralizing essential services into one platform. Integrated Firebase authentication for secure user management and real-time data handling.',
-            tech: ['Flutter', 'Dart', 'Firebase', 'Mobile Dev'],
+            title: 'Mountain Resort',
+            description: 'Cinematic nature-focused resort website featuring a unique seasonal fog atmosphere and sophisticated design system for premium hotel and tourism experiences.',
+            tech: ['React', 'Tailwind CSS v4', 'Framer Motion', 'Lucide Icons'],
             features: [
-                'Unified Service Dashboard',
-                'Real-time Firebase Auth',
-                'Cloud Firestore Integration',
-                'Custom UI Components',
-                'Native Performance on iOS/Android'
+                'Seasonal Fog Atmospheric Effect',
+                'Custom Interactive Glow Cursor',
+                'Immersive Storytelling Visuals',
+                'Ultra-Responsive Luxury UI',
+                'Nature-focused Design System'
             ],
             link: 'https://mountain-resort.vercel.app/',
             github: 'https://github.com/Navaneeth223/MountainResort',
