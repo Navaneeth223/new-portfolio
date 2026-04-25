@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { animateFadeIn } from '../../utils/gsapAnimations';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
+import Bikery from "../../images/Bikery.png"
 
 const Projects = () => {
     const titleRef = useRef(null);
@@ -70,9 +71,9 @@ const Projects = () => {
                 'Interactive Product Showcase',
                 'Mobile-optimized 3D Rendering'
             ],
-            link: '',
-            github: 'https://github.com/Navaneeth223',
-            image: null,
+            link: 'https://premium-bakery.vercel.app/',
+            github: 'https://github.com/Navaneeth223/PremiumBakery',
+            image: Bikery,
         },
         {
             title: 'QR Code Generator',
