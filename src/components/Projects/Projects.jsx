@@ -3,6 +3,11 @@ import { animateFadeIn } from '../../utils/gsapAnimations';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
 import Bikery from "../../images/Bikery.png"
+import Clinic from "../../images/Clinic.png"
+import Lodage from "../../images/Lodage.png"
+import OpenMind from "../../images/openMind-AI.png"
+import PrimuimChocolates from "../../images/Primuim-Chocolates.png"
+import TMS from "../../images/TMS.png"
 
 const Projects = () => {
     const titleRef = useRef(null);
@@ -16,7 +21,7 @@ const Projects = () => {
 
     const projects = [
         {
-            title: 'Net Shop',
+            title: 'OpenMind',
             description: 'Full-stack e-commerce platform with responsive layout, advanced product filtering, shopping cart flow, seller dashboard, and smooth UI animations. Complete MERN stack implementation.',
             tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST API'],
             features: [
@@ -26,12 +31,12 @@ const Projects = () => {
                 'Seller Dashboard for Product Management',
                 'User Profile & Order History'
             ],
-            link: '', // Add your project link
-            github: 'https://github.com/Navaneeth223',
-            image: null, // Replace with imported image
+            link: 'https://my-on-ai.vercel.app/', // Add your project link
+            github: 'https://github.com/Navaneeth223/my-on-ai',
+            image: OpenMind, // Replace with imported image
         },
         {
-            title: 'PDF Editor',
+            title: 'Clinic',
             description: 'Advanced browser-based PDF manipulation tool featuring text insertion, image placement, freehand drawing, erasing capabilities, watermarking, and multi-page editing with accurate canvas positioning.',
             tech: ['React.js', 'Canvas API', 'JavaScript', 'PDF.js'],
             features: [
@@ -41,12 +46,12 @@ const Projects = () => {
                 'Watermarking Capabilities',
                 'Multi-page PDF Support'
             ],
-            link: '',
-            github: 'https://github.com/Navaneeth223',
-            image: null,
+            link: 'https://serene-homeo-clinic.vercel.app/',
+            github: 'https://github.com/Navaneeth223/Serene-Homeo-Clinic',
+            image: Clinic,
         },
         {
-            title: 'AI Wallpaper Generator',
+            title: 'Premium Chocolates',
             description: 'Web application that generates stunning mobile wallpapers from text prompts. Features AI image generation, custom text overlays, fonts, emojis, stickers, and multiple resolution support with download functionality.',
             tech: ['React.js', 'Node.js', 'Express.js', 'AI API', 'Canvas'],
             features: [
@@ -56,12 +61,12 @@ const Projects = () => {
                 'Multiple Aspect Ratio Support',
                 'One-click Download'
             ],
-            link: '',
-            github: 'https://github.com/Navaneeth223',
-            image: null,
+            link: 'https://premium-chocolate.vercel.app/',
+            github: 'https://github.com/Navaneeth223/premium-chocolate',
+            image: PrimuimChocolates,
         },
         {
-            title: 'Bread Factory',
+            title: 'Premium Bakery',
             description: 'Interactive business website showcasing 3D visual elements and smooth animations. Implemented with Three.js-based 3D elements and Firebase backend for content management.',
             tech: ['Three.js', 'React.js', 'Firebase', 'GSAP'],
             features: [
@@ -76,7 +81,7 @@ const Projects = () => {
             image: Bikery,
         },
         {
-            title: 'QR Code Generator',
+            title: 'TMS',
             description: 'Custom QR code generator with support for both SVG and PNG formats. Features include adjustable size control, error correction levels, and clean UI with dark/light mode support.',
             tech: ['React.js', 'QR Library', 'JavaScript', 'CSS3'],
             features: [
@@ -86,12 +91,12 @@ const Projects = () => {
                 'Dynamic Color Customization',
                 'Clean, Responsive UI'
             ],
-            link: '',
-            github: 'https://github.com/Navaneeth223',
-            image: null,
+            link: 'http://159.65.157.39/',
+            github: 'https://github.com/Navaneeth223/tms-project',
+            image: TMS,
         },
         {
-            title: 'One Touch',
+            title: 'Lodage',
             description: 'Flutter-based mobile application centralizing essential services into one platform. Integrated Firebase authentication for secure user management and real-time data handling.',
             tech: ['Flutter', 'Dart', 'Firebase', 'Mobile Dev'],
             features: [
@@ -101,9 +106,9 @@ const Projects = () => {
                 'Custom UI Components',
                 'Native Performance on iOS/Android'
             ],
-            link: '',
-            github: 'https://github.com/Navaneeth223',
-            image: null,
+            link: 'https://mountain-resort.vercel.app/',
+            github: 'https://github.com/Navaneeth223/MountainResort',
+            image: Lodage,
         },
     ];
 
