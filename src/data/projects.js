@@ -4,6 +4,9 @@ import Lodage from "../images/Lodage.png"
 import OpenMind from "../images/openMind-AI.png"
 import PrimuimChocolates from "../images/primuim-Chocolates.png"
 import TMS from "../images/TMS.png"
+import Docxio from "../images/docxio.png"
+import OmniCut from "../images/omnicut.png"
+import jobPortal from "../images/jobPortal.png"
 
 export const projects = [
     {
@@ -74,12 +77,37 @@ export const projects = [
     },
     // New Archive Projects
     {
-        id: 'word-to-pdf',
-        title: 'Word to PDF Converter',
-        description: 'A powerful utility to convert Word documents to high-quality PDF files with preserved formatting.',
+        id: 'docxio',
+        title: 'Docxio',
+        description: 'A free, open-source PDF toolkit — merge, split, compress, convert, edit, sign & more. No subscriptions, no watermarks, no limits. Self-hostable.',
         tech: ['React', 'Node.js', 'LibreOffice', 'Tailwind CSS'],
         category: 'Tools',
-        github: 'https://github.com/Navaneeth223/word-to-pdf-converter',
+        link: 'https://pd-fforge.vercel.app/',
+        github: 'https://github.com/Navaneeth223/PDFforge',
+        image: Docxio,
+        featured: false
+    },
+    {
+        id: 'omnicut',
+        title: 'OmniCut',
+        description: 'A free, open-source video editor — trim, merge, convert, edit, sign & more. No subscriptions, no watermarks, no limits. Self-hostable.',
+        tech: ['React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'ai-voice', 'ai-video', 'ai-image'],
+        category: 'Tools',
+        link: 'https://omnicut-web.vercel.app/',
+        github: 'https://github.com/Navaneeth223/Omnicut',
+        image: OmniCut,
+        featured: false
+    },
+    {
+        id: 'job-portal',
+        title: 'Job Portal',
+        description: 'A job portal for students to find internships and jobs.',
+        tech: ['React', 'Node.js', 'TypeScript', 'Tailwind CSS'],
+        category: 'Full Stack',
+        link: 'https://jobportal-candidate.vercel.app/',
+        github: 'https://github.com/Navaneeth223/JOBportal-cant',
+        image: jobPortal,
+        featured: false
     },
     {
         id: 'yt-video-downloader',
