@@ -4,9 +4,9 @@ import Lodage from "../images/Lodage.png"
 import OpenMind from "../images/openMind-AI.png"
 import PrimuimChocolates from "../images/primuim-Chocolates.png"
 import TMS from "../images/TMS.png"
-import Docxio from "../images/docxio.png"
-import OmniCut from "../images/omnicut.png"
-import jobPortal from "../images/jobPortal.png"
+import Docxio from "../images/Docxio.png"
+import OmniCut from "../images/OmniCut.png"
+import jobPortal from "../images/jobportal.png"
 
 export const projects = [
     {
