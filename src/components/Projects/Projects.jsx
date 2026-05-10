@@ -6,7 +6,7 @@ import Bikery from "../../images/Bikery.png"
 import Clinic from "../../images/Clinic.png"
 import Lodage from "../../images/Lodage.png"
 import OpenMind from "../../images/openMind-AI.png"
-import PrimuimChocolates from "../../images/Primuim-Chocolates.png"
+import PrimuimChocolates from "../../images/primuim-Chocolates.png"
 import TMS from "../../images/TMS.png"
 
 const Projects = () => {
