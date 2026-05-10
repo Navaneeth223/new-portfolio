@@ -1,43 +1,38 @@
-import { Suspense, useEffect } from 'react';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { AnimatePresence } from 'framer-motion';
 import CustomCursor from './components/CustomCursor';
 import SmoothScroll from './components/SmoothScroll';
-import Hero from './components/Hero/Hero';
-import About from './components/About/About';
-import BentoGrid from './components/TechStack/BentoGrid';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import ProjectsArchive from './pages/ProjectsArchive';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   useEffect(() => {
-    // Update ScrollTrigger on load
     ScrollTrigger.refresh();
   }, []);
 
   return (
-    <SmoothScroll>
-      <div className="relative overflow-x-hidden">
-        <CustomCursor />
-
-        {/* Loading fallback for 3D components */}
-        <Suspense fallback={
-          <div className="min-h-screen flex items-center justify-center bg-dark-bg">
-            <div className="text-primary text-2xl animate-pulse">Loading...</div>
-          </div>
-        }>
-          <Hero />
-        </Suspense>
-
-        <About />
-        <BentoGrid />
-        <Projects />
-        <Contact />
-      </div>
-    </SmoothScroll>
+    <Router>
+      <SmoothScroll>
+        <div className="relative overflow-x-hidden">
+          <CustomCursor />
+          <Navbar />
+          
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/archive" element={<ProjectsArchive />} />
+            </Routes>
+          </AnimatePresence>
+        </div>
+      </SmoothScroll>
+    </Router>
   );
 }
 
